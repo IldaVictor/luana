@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criar conta</title>
+    <style>
+        body{
+            background: #416674;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .interface{
+            align-items: center;
+            background: #fff;
+            margin: auto 350px;
+            border-radius: 10px;
+            padding: 10px;
+        }
+        .caixa{
+            background: #dcdcdc;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        input{
+            width: 100%;
+            height: 20px;
+            background: none;
+            margin: 0;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <!--Começando o projexto-->
+    <div class="interface">
+        <form action="cadastro.php" method="POST">
+            <label>
+                <center>
+                    <h2 style="text-transform: uppercase;">Crie uma conta elite</h2>
+                </center>
+            </label>
+
+            <div class="texto">
+                <p>Nome Completo</p> 
+            </div>
+            <div class="caixa">
+                <input type="text" name="nome" id="nome" placeholder="Escreva o seu nome" required>
+            </div>
+
+            <div class="texto">
+                <p>Número de telefone</p> 
+            </div>
+            <div class="caixa">
+                <input type="text" name="numero" id="numero" placeholder="Escreva o seu número" required>
+            </div>
+
+            <div class="texto">
+                <p>Morada</p> 
+            </div>
+            <div class="caixa">
+                <input type="text" name="morada" id="morada" placeholder="Escreva a morada" required>
+            </div>
+
+            <div class="texto">
+                <p>Genero</p> 
+            </div>
+            <div class="caixa">
+                <select name="genero" id="genero" style="width: 100%; background: none; border: none;" required>
+                    <option value="Masculino">Masculino</option>
+                    <option value="Feminino">Feminino</option>
+                </select>
+            </div>
+
+            <div class="texto">
+                <p>Senha</p> 
+            </div>
+            <div class="caixa">
+                <input type="password" name="senha" id="senha" required>
+            </div>
+
+            <div class="texto">
+                <p>Confirma a senha</p> 
+            </div>
+            <div class="caixa">
+                <input type="password" name="csenha" id="csenha" required>
+            </div>
+            <br>
+            <div class="bt">
+                <input type="submit" style="width: 100%; color: #fff; height: 40px; background: #416674; border-radius: 10px;" value="Criar conta">
+                <br><br>
+                <center>
+                    <a href="#">Já tenho uma conta</a>
+                </center>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
